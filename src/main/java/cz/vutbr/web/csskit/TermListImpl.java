@@ -128,5 +128,14 @@ public class TermListImpl extends AbstractList<Term<?>> implements TermList {
 			return false;
 		return true;
 	}	
-	
+
+	@Override
+	public Term clone() {
+	  try {
+	  	return (Term) super.clone();
+	  } catch (CloneNotSupportedException e) {
+	  	throw new RuntimeException(e);
+	  }
+	}
+
 }

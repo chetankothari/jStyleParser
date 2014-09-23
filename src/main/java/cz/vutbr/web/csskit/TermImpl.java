@@ -87,7 +87,14 @@ public class TermImpl<T> implements Term<T> {
 			return false;
 		return true;
 	}
-	
-	
+
+	@Override
+	public Term clone() {
+	  try {
+	  	return (Term) super.clone();
+	  } catch (CloneNotSupportedException e) {
+	  	throw new RuntimeException(e);
+	  }
+	}
 
 }
