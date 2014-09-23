@@ -66,6 +66,12 @@ public interface Term<T> extends Cloneable {
      */
     public Term<T> setOperator(Operator operator);
 
+    /**
+     * This method currently returns a shallow copy of the object.
+     *
+     * @return Shallow copy of this object.
+     */
+    // TODO implement deep clone
     public Term<T> clone();
 
     public Term<T> shallowClone();
