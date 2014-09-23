@@ -138,4 +138,8 @@ public class TermListImpl extends AbstractList<Term<?>> implements TermList {
 		}
 	}
 
+	public Term shallowClone() {
+		return this.clone();
+	}
+
 }

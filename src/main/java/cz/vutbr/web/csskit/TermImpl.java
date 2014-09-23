@@ -97,4 +97,8 @@ public class TermImpl<T> implements Term<T> {
 		}
 	}
 
+	public Term shallowClone() {
+		return this.clone();
+	}
+
 }
