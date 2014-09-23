@@ -131,11 +131,11 @@ public class TermListImpl extends AbstractList<Term<?>> implements TermList {
 
 	@Override
 	public Term clone() {
-	  try {
-	  	return (Term) super.clone();
-	  } catch (CloneNotSupportedException e) {
-	  	throw new RuntimeException(e);
-	  }
+		try {
+			return (Term) super.clone();
+		} catch (CloneNotSupportedException e) {
+			throw new RuntimeException(e);
+		}
 	}
 
 }
