@@ -118,7 +118,7 @@ public class SingleMapNodeData implements NodeData {
 			q.curSource = d;
 			// remove operator
 			if ((q.curValue != null) && (q.curValue.getOperator() != null)) {
-				q.curValue = q.curValue.clone().setOperator(null);
+				q.curValue = q.curValue.shallowClone().setOperator(null);
 			}
 			map.put(key, q);
 		}
