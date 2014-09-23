@@ -118,6 +118,7 @@ public class SingleMapNodeData implements NodeData {
 			q.curSource = d;
 			// remove operator
 			if ((q.curValue != null) && (q.curValue.getOperator() != null)) {
+				// TODO use clone when deep clone is implemented.
 				q.curValue = q.curValue.shallowClone().setOperator(null);
 			}
 			map.put(key, q);
