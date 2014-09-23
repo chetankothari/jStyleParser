@@ -88,7 +88,6 @@ public class TermImpl<T> implements Term<T> {
 		return true;
 	}
 
-	@Override
 	public Term clone() {
 		try {
 			return (Term) super.clone();
